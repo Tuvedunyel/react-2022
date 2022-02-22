@@ -14,9 +14,24 @@ function Filter(props) {
 
   return (
     <div className='filter-container'>
-      <button onClick={() => props.setActiveGenre(0)}>All</button>
-      <button onClick={() => props.setActiveGenre(35)}>Comedy</button>
-      <button onClick={() => props.setActiveGenre(28)}>Action</button>
+      <button
+        className={props.activeGenre === 0 && "active"}
+        onClick={() => props.setActiveGenre(0)}
+      >
+        All
+      </button>
+      <button
+        className={props.activeGenre === 35 && "active"}
+        onClick={() => props.setActiveGenre(35)}
+      >
+        Comedy
+      </button>
+      <button
+        className={props.activeGenre === 28 && "active"}
+        onClick={() => props.setActiveGenre(28)}
+      >
+        Action
+      </button>
     </div>
   );
 }
