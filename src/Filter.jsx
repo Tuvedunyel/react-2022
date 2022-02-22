@@ -15,19 +15,19 @@ function Filter(props) {
   return (
     <div className='filter-container'>
       <button
-        className={props.activeGenre === 0 && "active"}
+        className={props.activeGenre === 0 ? "active" : "" }
         onClick={() => props.setActiveGenre(0)}
       >
         All
       </button>
       <button
-        className={props.activeGenre === 35 && "active"}
+        className={props.activeGenre === 35 ? "active" : "" }
         onClick={() => props.setActiveGenre(35)}
       >
         Comedy
       </button>
       <button
-        className={props.activeGenre === 28 && "active"}
+        className={props.activeGenre === 28 ? "active" : ''}
         onClick={() => props.setActiveGenre(28)}
       >
         Action
