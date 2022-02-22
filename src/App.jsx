@@ -1,4 +1,4 @@
-import "./App.css";
+import "./sass/App.scss";
 import { useEffect, useState } from "react";
 import Movie from "./Movie";
 import Filter from "./Filter";
